@@ -1,0 +1,22 @@
+
+body{
+    min-height: 100vh; 
+     margin: 0; 
+    background-image: linear-gradient(to bottom,#19202d,#0e1728);
+    background-repeat: no-repeat; 
+}
+
+.links{
+    color: #8FA4C3 ;
+}
+
+p{
+    color: #DFE7F2;
+}
+
+h1{
+    font-style: "https://fonts.googleapis.com/css2?family=Erica+One&display=swap";
+    font-weight: bolder;
+    font-size: 100px;
+    color: #DFE7F2;
+}
