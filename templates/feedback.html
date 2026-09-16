@@ -1,0 +1,33 @@
+<html lang="pt-br">
+<head>
+<link rel="stylesheet" href="feedback.css">
+</head>
+
+<body>
+
+    <h1>Seu FeedBack é sempre bem vindo aqui!</h1>
+
+    <form method="post">
+        <label for="feedback"><h2>Feedback</h2></label>
+        <label for="assunto"><h3>Assunto:</h3></label>
+        <input name="assuntoForm" type="text" placeholder="Informe o assunto" maxlength="100" required>
+        <br>
+        <label for="feedback">Resenha:</label>
+        <input name="resenhaForm" type="text" id="feedback" placeholder="Descreva sua resenha aqui...">
+        <br>
+        <label for="local">Local:</label>
+        <input name="localForm" type="text" placeholder="Informe o local" id="input" maxlength="100" required>
+        <br>
+        <label for="data">Data:</label>
+        <input name="dataForm" type="date" id="data" required>
+        <br>
+        <label for="status">Situação</label>
+        <select name="statusForm" id="status" required>
+            <option value="recorrente">recorrente</option>
+            <option value="acontecdio">acontecido</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar" id="button">
+    </form>
+
+</body>
