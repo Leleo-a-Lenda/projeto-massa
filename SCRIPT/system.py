@@ -18,5 +18,11 @@ def buscar_feedback(id_feedback):
     pass
 
 
+class Cadastro:
+    def __init__(self, nome, senha):
+        self.id = uuid.uuid4()
+        self.nome = nome
+        self.senha = senha
+
 def listar_feedbacks():
     pass
