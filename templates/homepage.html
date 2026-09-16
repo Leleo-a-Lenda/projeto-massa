@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="homepage.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='homepage.css') }}">
     <title>ConsertaPD</title>
 
 </head>
 <body>
     <header>
-        <a class="links">Solicitações</a>
-        <a class="links">Cadastrar-se</a>
-        <a class="links">Login</a>
+        <a class="links" href="{{ url_for('feedback') }}">Solicitações</a>
+        <a class="links" href="{{ url_for('cadastro') }}">Cadastrar-se</a>
+        <a class="links" href="{{ url_for('login') }}">Login</a>
     </header>
     <div class="tudo">
         <div id="intro1">

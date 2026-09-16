@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="cadastros.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='cadastros.css') }}" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a class="links">Solicitações</a>
-        <a class="links">Cadastrar-se</a>
-        <a class="links">Login</a>
+        <a class="links" href="{{ url_for('feedback') }}">Solicitações</a>
+        <a class="links" href="{{ url_for('cadastro') }}">Cadastrar-se</a>
+        <a class="links" href="{{ url_for('login') }}">Login</a>
     </header>
   <div class="tudo">
     <h4>Login</h5>
