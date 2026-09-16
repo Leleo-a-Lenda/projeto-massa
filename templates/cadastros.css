@@ -14,18 +14,18 @@ body{
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-p{
+label{
     color: #DFE7F2;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1{
+h4{
     font-family: 'Erica One Display',sans-serif;
     font-weight: bold;
-    font-size: 100px;
+    font-size: 40px;
     color: #DFE7F2;
 }
+
 
 
 header{
@@ -37,7 +37,10 @@ header{
 }
 
 .tudo{
-    margin: 67px;
-    
-    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
