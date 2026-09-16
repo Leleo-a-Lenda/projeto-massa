@@ -27,15 +27,30 @@ h1{
     color: #DFE7F2;
 }
 
+#tit{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
 header{
     background-color: #030c1f;
     display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    padding: 30px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 20px;
 }
 
+.logo{
+    display: block;
+    max-height: 55px;       
+    width: auto;
+    margin-bottom: 0;
+}
+#opc{display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
 .tudo{
     margin: 67px;
     
