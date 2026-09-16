@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+body{
+    min-height: 100vh; 
+     margin: 0; 
+    background-image: url('https://i.pinimg.com/1200x/6e/4d/d9/6e4dd90db26d58d5f0ca7c145943491e.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.links{
+    color: #598eff ;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    color: #DFE7F2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4{
+    font-family: 'Erica One Display',sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #DFE7F2;
+}
+
+
+
+header{
+    background-color: #030c1f;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 30px;
+}
+
+.tudo{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
