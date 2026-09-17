@@ -12,16 +12,16 @@
     <h4>Cadastro</h4>
         <form action="" method="post">
             <label for="fname">Usuário/E-mail:</label><br>
-            <input type="text" name="user" ><br>
+            <input type="text" name="user" required><br>
             <Br>
             <label for="lname">Senha:</label><br>
-            <input type="password"  name="senha" ><br><br>
+            <input type="password"  name="senha" required><br><br>
             <Br>
             <input type="submit" value="Submit">
         </form>
         <Br>
         <Br>
-        <a class="links">Já tem conta?</a>
+        <a class="links" href="{{ url_for('login') }}">Já tem conta?</a>
     </div>
 </body>
 </html>
