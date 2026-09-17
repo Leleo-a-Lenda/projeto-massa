@@ -1,6 +1,11 @@
-<header>
-    <a class="links" href="{{ url_for('home') }}">Home</a>
-    <a class="links" href="{{ url_for('feedback') }}">Feedbacks</a>
-    <a class="links" href="{{ url_for('cadastro') }}">Cadastrar-se</a>
-    <a class="links" href="{{ url_for('login') }}">Login</a>
+<header class="site-header">
+    <a class="brand" href="{{ url_for('home') }}" aria-label="Página inicial">
+        <img src="{{ url_for('static', filename='iconfinal.png') }}" alt="ConsertaPD">
+    </a>
+    <nav class="site-nav">
+        <a class="links" href="{{ url_for('home') }}">Home</a>
+        <a class="links" href="{{ url_for('feedback') }}">Feedbacks</a>
+        <a class="links" href="{{ url_for('cadastro') }}">Cadastrar-se</a>
+        <a class="links" href="{{ url_for('login') }}">Login</a>
+    </nav>
 </header>

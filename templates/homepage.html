@@ -9,14 +9,14 @@
 </head>
 <body>
     {% include 'base_header.html' %}
-    <div class="tudo">
-        <div id="intro1">
-            <h1>ConsertaPD</h1>
-            <p>Nosso site de Suporte ao Porto Digital.</p>
-        </div>
-        <br>
-        <br>
-        <br>
+    <main class="tudo">
+        <section class="hero">
+            <img class="home-logo" src="{{ url_for('static', filename='iconfinal.png') }}" alt="Logo ConsertaPD">
+            <div id="intro1">
+                <h1>ConsertaPD</h1>
+                <p>Nosso site de Suporte ao Porto Digital.</p>
+            </div>
+        </section>
         <hr>
         <div id="intro2">
             <p>O ConsertaPD é uma plataforma criada para receber, organizar e agrupar problemas identificados nas instituições de ensino. Desenvolvido para toda a comunidade escolar, o projeto tem como objetivo facilitar a comunicação e agilizar a resolução de problemas estruturais e situações comuns da ETE Porto Digital.</p>
@@ -36,6 +36,6 @@
                 </div>
             {% endfor %}
         </div>
-    </div>
+    </main>
 </body>
 </html>

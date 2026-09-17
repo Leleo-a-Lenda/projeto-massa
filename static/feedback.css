@@ -15,6 +15,30 @@ body {
     text-align: center;
 }
 
+header.site-header {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #030c1f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 30px;
+}
+
+.brand img {
+    display: block;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 h1 {
     margin-bottom: 30px;
     font-size: 32px;
