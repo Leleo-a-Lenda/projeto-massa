@@ -1,5 +1,6 @@
 import uuid
-from db import db
+from .db import db
+from .models import Usuarios
 
 class Feedback:
     def __init__(self, usuario, nota, mensagem):
