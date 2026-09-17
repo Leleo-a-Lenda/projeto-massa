@@ -1,4 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for
+from SCRIPT.db import db
+from SCRIPT.system import user_log
+from SCRIPT.models import Usuarios, Feedback
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///usuarios.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = 'sqlite:///feedbacks.db'
@@ -24,6 +28,7 @@ def cadastro():
     if request.method == 'POST':
         nome = request.form['user']
         senha = request.form['senha']
+        user_log(nome, senha)
         return redirect(url_for('home'))
     return render_template('cadastro.html',)
 

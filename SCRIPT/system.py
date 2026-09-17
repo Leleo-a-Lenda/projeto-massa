@@ -1,5 +1,5 @@
 import uuid
-
+from db import db
 
 class Feedback:
     def __init__(self, usuario, nota, mensagem):
@@ -17,12 +17,11 @@ def novo_feedback(usuario, nota, mensagem):
 def buscar_feedback(id_feedback):
     pass
 
-
-class Cadastro:
-    def __init__(self, nome, senha):
-        self.id = uuid.uuid4()
-        self.nome = nome
-        self.senha = senha
+def user_log(nome, senha):
+    id = uuid.uuid4()
+    novo_user = Usuarios(nome=nome, senha=senha)
+    db.session.add(novo_user)
+    db.session.commit()
 
 def listar_feedbacks():
     pass
