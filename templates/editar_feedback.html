@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='feedback.css') }}">
+    <title>Editar Feedback</title>
+</head>
+<body>
+    {% include 'base_header.html' %}
+
+    <h1>Editar Feedback</h1>
+
+    <form method="post">
+        <label>Seu usuario:</label>
+        <input name="user" type="text" required>
+        <br>
+        <label>Sua senha:</label>
+        <input name="senha" type="password" required>
+        <br>
+        <label for="assunto"><h3>Assunto:</h3></label>
+        <input name="assuntoForm" type="text" value="{{ feedback.assunto }}" maxlength="100" required>
+        <br>
+        <label for="feedback">Resenha:</label>
+        <input name="resenhaForm" type="text" id="feedback" value="{{ feedback.resenha }}">
+        <br>
+        <label for="local">Local:</label>
+        <input name="localForm" type="text" value="{{ feedback.local }}" id="input" maxlength="100" required>
+        <br>
+        <label for="data">Data:</label>
+        <input name="dataForm" type="date" id="data" value="{{ feedback.data }}" required>
+        <br>
+        <label for="status">Situação</label>
+        <select name="statusForm" id="status" required>
+            <option value="recorrente" {% if feedback.status == 'recorrente' %}selected{% endif %}>recorrente</option>
+            <option value="acontecido" {% if feedback.status == 'acontecido' %}selected{% endif %}>acontecido</option>
+        </select>
+        <br>
+        <input type="submit" value="Salvar" id="button">
+    </form>
+</body>
+</html>

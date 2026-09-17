@@ -8,11 +8,7 @@
     <link href="{{ url_for('static', filename='cadastros.css') }}" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a class="links" href="{{ url_for('feedback') }}">Feedbacks</a>
-        <a class="links" href="{{ url_for('cadastro') }}">Cadastrar-se</a>
-        <a class="links" href="{{ url_for('login') }}">Login</a>
-    </header>
+    {% include 'base_header.html' %}
 
     <div class="tudo">
         <h4>esse usuário já existe</h4>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='feedback.css') }}">
+    <title>Excluir Feedback</title>
+</head>
+<body>
+    {% include 'base_header.html' %}
+
+    <h1>Excluir Feedback</h1>
+    <p>{{ feedback.assunto }}</p>
+    <p>{{ feedback.resenha }}</p>
+
+    <form method="post">
+        <label>Seu usuario:</label>
+        <input name="user" type="text" required>
+        <br>
+        <label>Sua senha:</label>
+        <input name="senha" type="password" required>
+        <br>
+        <input type="submit" value="Excluir" id="button">
+    </form>
+</body>
+</html>

@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    {% block header %}
-    <header>
-
-        <a class="links" href="/">Home</a>
-        <a class="links" href="/feedback">Feedbacks</a>
-        <a class="links" href="/cadastro">Cadastrar-se</a>
-        <a class="links" href="/login">Login</a>
-    </header>
-    {% endblock %}
-</body>
-</html>
+<header>
+    <a class="links" href="{{ url_for('home') }}">Home</a>
+    <a class="links" href="{{ url_for('feedback') }}">Feedbacks</a>
+    <a class="links" href="{{ url_for('cadastro') }}">Cadastrar-se</a>
+    <a class="links" href="{{ url_for('login') }}">Login</a>
+</header>

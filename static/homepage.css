@@ -41,3 +41,17 @@ header{
     
     height: 100vh;
 }
+.feedbacks{
+    margin-top: 40px;
+}
+
+.comentario{
+    border-top: 1px solid #598eff;
+    padding: 15px 0;
+}
+
+.editar{
+    color: #598eff;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -7,11 +7,7 @@
     <link href="{{ url_for('static', filename='cadastros.css') }}" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <a class="links">Feedbacks</a>
-        <a class="links">Cadastrar-se</a>
-        <a class="links">Login</a>
-    </header>
+    {% include 'base_header.html' %}
     <div class="tudo">
     <h4>Cadastro</h4>
         <form action="" method="post">
