@@ -31,9 +31,23 @@ h4{
 header{
     background-color: #030c1f;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
     gap: 20px;
-    padding: 30px;
+    padding: 14px 30px;
+}
+
+.brand img{
+    display: block;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.site-nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .tudo{

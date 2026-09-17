@@ -31,15 +31,81 @@ h1{
 header{
     background-color: #030c1f;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
     gap: 20px;
-    padding: 30px;
+    padding: 14px 30px;
+}
+
+.brand img{
+    display: block;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.site-nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .tudo{
     margin: 67px;
-    
     height: 100vh;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    max-width: 1000px;
+}
+
+.home-logo{
+    width: min(32vw, 280px);
+    height: auto;
+    flex-shrink: 0;
+}
+
+.hero h1{
+    margin: 0;
+}
+
+.hero p{
+    font-size: 20px;
+}
+
+@media (max-width: 700px){
+    header{
+        padding: 12px 18px;
+    }
+
+    .site-nav{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px 12px;
+    }
+
+    .links{
+        font-size: 15px;
+    }
+
+    .tudo{
+        margin: 36px 22px;
+    }
+
+    .hero{
+        gap: 20px;
+    }
+
+    .home-logo{
+        width: 34vw;
+    }
+
+    h1{
+        font-size: 48px;
+    }
 }
 .feedbacks{
     margin-top: 40px;
